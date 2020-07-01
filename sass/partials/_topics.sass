@@ -1,0 +1,45 @@
+@import '../variables/media'
+@import '../variables/dimmens'
+
+$image-size: 140px
+
+@function topic-background($image-name)
+  @return top center / $image-size auto no-repeat url('../assets/icons/#{$image-name}.svg')
+
+.topics
+  padding: $spacing
+
+  h2
+    padding-bottom: $spacing / 2
+
+  .flex
+    align-content: space-evenly
+    justify-content: center
+    flex-wrap: wrap
+
+  aside
+    padding-top: $image-size
+    text-align: center
+
+    &.topic-remote-work
+      background: topic-background('trabajo-remoto')
+
+    &.topic-rethinking-programming
+      background: topic-background('repensando-la-programación')
+
+    &.topic-computer-security
+      background: topic-background('seguridad-informática')
+
+    &.topic-code-bases
+      background: topic-background('bases-del-código')
+
+    @media #{$information-phone}
+      margin: $spacing / 2 0
+      width: 100%
+
+    @media #{$information-tablet}
+      width: 50%
+      margin: $spacing / 3 0
+
+    @media #{$information-desktop}
+      width: 25%

@@ -1,0 +1,111 @@
+@import '../variables/colors'
+@import '../variables/media'
+@import '../variables/dimmens'
+
+$nav-size: 24px
+
+.navigation
+  background: #efefef
+  position: fixed /* fallback */
+  position: -webkit-sticky /* still needed for ios */
+  position: sticky
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 2
+
+  .wrapper
+    align-items: center
+    justify-content: space-evenly
+    min-height: 45px
+
+    > a
+      transition: .5s
+      cursor: pointer
+
+      &:not(:first-child)
+        margin-left: $spacing
+
+      &:link
+        color: $primary-text
+
+      &:hover
+        color: $accent-color
+        text-decoration: line-through
+
+      &:active, &:target
+        color: rgba($primary-text, .56)
+        text-decoration: line-through
+
+    @media #{$information-phone}
+      justify-content: space-between
+
+    @media #{$information-desktop}
+      min-height: 80px
+
+  a
+    text-decoration: none
+    text-transform: uppercase
+
+  img
+    @media #{$information-desktop}
+      width: $spacing
+      height: $spacing
+
+
+.nav-icon
+  cursor: pointer
+  width: $nav-size
+  height: $nav-size
+  margin-top: -5px
+
+  &:after, &:before, & span
+    background-color: $primary-color
+    border-radius: 3px
+    content: ''
+    display: block
+    height: 2px
+    margin-top: 6px
+    transition: all .2s ease-in-out
+
+
+.nav-menu
+  position: fixed
+  z-index: 2
+  top: 45.5px
+  left: 0
+  right: 0
+  opacity: 0
+  transition: all 0.5s ease-in-out
+
+  nav
+    transition-delay: 0s
+    background-color: #0000ec
+    overflow: auto
+
+  a
+    color: white
+    display: block
+    padding: 10px 0
+    margin: 0
+    text-align: center
+
+
+.nav-input
+  &:checked + label
+    &:before
+      transform: translateY(7px) rotate(135deg)
+
+    &:after
+      transform: translateY(-9px) rotate(-135deg)
+
+    span
+      transform: scale(0)
+
+  &:checked ~ .nav-menu, & nav
+    transform: none
+    opacity: 1
+    transition-delay: 300ms
+
+  &:not(:checked) ~ .nav-menu .nav-overlay
+    pointer-events: none

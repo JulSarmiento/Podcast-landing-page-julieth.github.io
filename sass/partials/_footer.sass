@@ -1,0 +1,34 @@
+@import '../variables/dimmens'
+@import '../variables/media'
+@import '../variables/colors'
+
+.footer
+  align-items: center
+  justify-content: center
+
+  @media #{$information-phone}
+    display: block
+
+  .copyright
+    font-size: 12pt
+    margin: 0 auto 0 0
+
+    @media #{$information-phone}
+      text-align: center
+      display: block
+
+  .copyright, & .flex
+    padding: 20px 0
+
+  nav
+    @media #{$information-phone}
+      padding: 12px 0
+
+    a
+      color: $primary-text
+      margin-left: $spacing
+      height: $spacing / 2
+      width: $spacing / 2
+
+      @media #{$information-phone}
+        padding: 0 20px

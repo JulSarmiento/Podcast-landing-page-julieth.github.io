@@ -1,0 +1,25 @@
+@import '../variables/colors'
+@import '../variables/gradiant'
+@import '../variables/media'
+
+.about
+  position: relative
+  margin-top: -1 * $rotation
+
+  @media #{$information-phone}
+    margin-top: -1 * $rotation-md
+    flex-direction: column
+
+  img
+    max-height: 50%
+    width: auto
+
+    @media #{$information-phone}
+      width: 100%
+
+    @media #{$information-tablet}
+      max-width: 50%
+      height: auto
+
+  .article
+    padding: $rotation / 2 0

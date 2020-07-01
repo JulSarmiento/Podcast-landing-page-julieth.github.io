@@ -1,0 +1,19 @@
+@import '../variables/media'
+
+.interviews
+  .grid
+    grid-auto-rows: minmax(30%, auto)
+
+    @media #{$information-phone}
+      grid-template-columns: repeat(1, 4fr)
+      grid-auto-rows: minmax(243px, auto)
+
+    @media #{$information-tablet}
+      grid-template-columns: repeat(2, 2fr)
+
+    @media #{$information-desktop}
+      grid-template-columns: repeat(3, 2fr)
+
+    img
+      width: 100%
+      height: auto

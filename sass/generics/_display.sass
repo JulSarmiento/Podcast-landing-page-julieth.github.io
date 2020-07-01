@@ -1,0 +1,35 @@
+@import '../variables/colors'
+@import '../variables/media'
+
+.grid
+  display: grid
+
+.flex
+  display: flex
+
+  &.wrap
+    flex-wrap: wrap
+
+  &.center-align
+    justify-content: center
+    align-items: center
+
+  &.menu
+    & > *:first-child
+      margin-right: auto
+
+.wrapper
+  @media #{$information-phone}
+    margin: 0 10px
+
+  @media #{$information-tablet}
+    max-width: 80%
+    margin: 0 auto
+
+  @media #{$information-desktop}
+    margin: 0 auto
+    max-width: 1120px
+
+    &.thin
+      max-width: 1240px
+      padding: 0 20px

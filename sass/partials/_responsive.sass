@@ -1,0 +1,18 @@
+@import '../variables/media'
+
+@media #{$information-desktop}
+  .hide-on-desktop
+    display: none
+
+@media #{$information-tablet}
+  .hide-on-tablet
+    display: none
+
+@media #{$information-phone}
+  .hide-on-mobile
+    display: none
+
+// Smooth scrolling IF user doesn't have a preference due to motion sensitivities
+@media screen and (prefers-reduced-motion: no-preference)
+  html, body
+    scroll-behavior: smooth

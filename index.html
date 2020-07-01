@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="copyright" content="© 2020 Acámica - Globant">
+    <meta name="author" content="Julieth Sarmiento">
+
+    <!-- Favicon generated using https://www.favicon-generator.org/ and https://img.icons8.com/nolan/64/micro.png icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+
+    <meta name="description" content="Podcast Acámica 2020 por Julieth Sarmiento"/>
+    <meta name="msapplication-TileColor" content="#0000a3">
+    <meta name="msapplication-TileImage" content="assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#0000a3">
+    <!-- End of Favicon area -->
+
+    <meta name="viewport" content="width=device-width">
+
+    <title>Podcast landing page | Julieth Sarmiento </title>
+
+    <link rel="stylesheet" crossorigin
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    >
+
+    <link rel="stylesheet" crossorigin
+          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@500;600"
+    >
+
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navigation">
+      <div class="wrapper thin flex menu">
+        <a href="#">
+          <img src="assets/logo-dark.svg" alt="logo">
+        </a>
+        <a href="#episodios" class="hide-on-mobile">Episodios</a>
+        <a href="#nosotros" class="hide-on-mobile">Nosotros</a>
+        <a href="#entrevistas" class="hide-on-mobile">Entrevistas</a>
+        <a href="#tópicos" class="hide-on-mobile">Tópicos</a>
+
+        <input type="checkbox" id="menu-opener" hidden class="nav-input">
+
+        <label for="menu-opener" class="nav-icon hide-on-desktop hide-on-tablet">
+          <span></span>
+        </label>
+
+        <aside class="nav-menu hide-on-desktop hide-on-tablet">
+          <nav>
+            <a href="#episodios">Episodios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#entrevistas">Entrevistas</a>
+            <a href="#tópicos">Tópicos</a>
+          </nav>
+        </aside>
+      </div>
+    </nav>
+
+    <!-- hello world -->
+    <header id="about" class="wrapper font-sans">
+      <hgroup>
+        <h1>Hello <span class="line-through">world</span> pale blue dot.</h1>
+        <h2>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</h2>
+      </hgroup>
+
+      <a href="#nosotros" class="btn">Conoce más</a>
+    </header>
+
+    <!-- el main que lleva azul -->
+    <main id="episodios" class="episodes">
+      <header>
+        <h2 class="white-text font-sans wrapper">Episodios</h2>
+      </header>
+
+      <div class="wrapper thin grid">
+        <aside class="responsive-iframe">
+          <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"
+                  title="JS Party: JavaScript & Web Dev"
+                  allow="encrypted-media" >
+          </iframe>
+        </aside>
+
+        <aside class="responsive-iframe">
+          <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"
+                  title="Wes Bos and Scott Tolinski"
+                  allow="encrypted-media" >
+          </iframe>
+        </aside>
+
+        <aside class="responsive-iframe">
+          <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv"
+                  title="Rework"
+                  allow="encrypted-media" >
+          </iframe>
+        </aside>
+
+        <aside class="responsive-iframe">
+          <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"
+                  title="Ruby on Rails podcast"
+                  allow="encrypted-media" >
+
+          </iframe>
+        </aside>
+      </div>
+    </main>
+
+    <!-- De donde venimos -->
+    <section id="nosotros" class="flex center-align wrapper about" role="contentinfo" aria-label="https://www.nytimes.com/2019/02/13/magazine/women-coding-computer-programming.html">
+      <img class="phone" src="assets/img/phone.png" alt="The Secret History of Women in Coding - The New York Times Magazine">
+
+      <section class="article">
+        <h2 >De dónde venimos</h2>
+        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+        <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+      </section>
+    </section>
+
+    <!-- Invitadas/os estelares -->
+    <section id="entrevistas" class="interviews">
+      <header class="wrapper">
+        <h2>Invitadas/os estelares</h2>
+      </header>
+
+      <div class="grid">
+        <img class="img" src="assets/img/grace-hopper.png" alt="FGrace Hopper">
+        <img class="img" src="assets/img/Katie-Bouman.png" alt="FKatie Bouman">
+        <img class="img" src="assets/img/Margaret_Hamilton.png" alt="FMargaret Hamilton">
+        <img class="img" src="assets/img/AnE.R.A.Univac1103computerinthe1950s.png" alt="E.R.A.Univac">
+        <img class="img" src="assets/img/ComputeroperatorswithanEniac—theworld’sfirstprogrammablegeneral-purposecomputer.png" alt="Operaciones de computacion con un Eniac">
+        <img class="img" src="assets/img/susan-kare.png" alt="FSusan Kare.">
+      </div>
+    </section>
+
+    <!-- Algunos de nuestros temas -->
+    <section id="tópicos" class="topics wrapper">
+      <header>
+        <h2>Algunos de nuestros temas</h2>
+      </header>
+
+      <div class="flex">
+        <aside class="topic topic-remote-work">Trabajo remoto</aside>
+        <aside class="topic topic-rethinking-programming">Repensado de la programación</aside>
+        <aside class="topic topic-computer-security">Seguridad informática</aside>
+        <aside class="topic topic-code-bases">Base del código</aside>
+      </div>
+    </section>
+
+    <!-- ¿Querés las últimas novedades? -->
+    <section id="novedades" class="news flex center-align">
+      <header class="wrapper text-center">
+        <h2 class="white-text">¿Quieres las últimas novedades?</h2>
+        <a class="btn" href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+      </header>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer wrapper thin flex" role="doc-footnote">
+      <h2 class="copyright font-mono">&copy;2019- Hello blue pale dot</h2>
+
+      <nav class="flex center-align">
+        <a href="//spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+
+        <a href="//instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+
+        <a href="//twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+
+        <a href="//facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+
+        <a href="//telegram.com" target="_blank"><i class="fab fa-telegram"></i></a>
+      </nav>
+    </footer>
+  </body>
+</html>

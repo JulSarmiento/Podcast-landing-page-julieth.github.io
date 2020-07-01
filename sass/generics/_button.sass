@@ -1,0 +1,26 @@
+@import '../variables/colors'
+
+a.btn
+  display: inline-block
+
+.btn
+  border: none
+  outline: none
+  color: black
+  padding: 10px 20px
+  background: $accent-color
+  margin: 2px 0
+  transition: background 0.8s
+
+  &:link
+    text-decoration: none
+
+  &:hover
+    background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%)
+    color: white
+
+  &:active
+    background-color: lighten($accent-color, 30%)
+    background-size: 100%
+    transition: background 0s
+
